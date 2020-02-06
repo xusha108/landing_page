@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.7;
+    font-weight: 400;
+    background: #fff;
+    color: #454545;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Fira Sans', Avenir, 'Helvetica Neue',
+      'Lucida Grande', sans-serif;
+    text-rendering: optimizeLegibility;
+  }
+
+
+  a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a:hover {
+    color: #166281;
+  }
