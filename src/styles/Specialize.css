@@ -1,0 +1,45 @@
+.spec_wrapper{
+    background: #EBEBEB;
+    width: 100%;
+    margin-top: 3%;    
+   
+}
+.spec_block{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-content: center;
+}
+
+.spec_item{
+    margin-top: 300px;
+    width: 350px;
+    height: 360px;
+    background-image: url(../img/spesialised.png);
+        
+}
+.spec_item a{
+    color: white;
+}
+
+.spec_item:hover{
+    background-image: url(../img/spesialised_hover.png);
+    cursor: pointer;
+}
+.spec_wrapper p, h2{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+    color: #BDBDBD;
+    margin-left: 150px;
+    
+}
+.spec_wrapper h2 {
+    font-size: 48px;
+    color: #333333;
+    
+}
