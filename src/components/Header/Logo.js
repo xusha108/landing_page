@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
+import LogoImage from '../../img/logo.png'
+
+
 
 class Logo extends Component {
     render() {
         return (
         <div className="logo">
-            <a><img src="../img/logo.png" /></a>
-            <p>BuhOne</p>
+            <a href='/'>
+                <img src={LogoImage} alt='#'/>
+            </a>
+            <span>BuhOne</span>
         </div>
         )
     }
