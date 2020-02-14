@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import '../../styles/Specialize.css'
-import SpecImg from '../../img/spesialised.png'
+
 
 
 export default class Specialize extends Component {
@@ -17,10 +17,13 @@ export default class Specialize extends Component {
 
        return (
          <div className='spec_wrapper'>
-           <p>Наши услуги</p>
-           <h2>Мы специализируемся</h2>
-            <div className='spec_block'>
-               
+            
+            <div className='spec_title'>
+               <p>Наши услуги</p>
+               <h2>Мы специализируемся</h2>
+            </div>
+
+            <div className='spec_block'>               
 
             {imgs.map( (value, index) => {
                return <div key={index} className='spec_item'>

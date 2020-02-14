@@ -1,3 +1,5 @@
+
+
 .header-wrapper {
     display: block;  
 }
@@ -31,7 +33,7 @@
 .logo{
     display: inline-block;
     width: 20%; 
-    margin-left: 100px;
+    margin-left: 15%;    
 }
 .logo span {
     font-family: Merriweather;
@@ -41,6 +43,7 @@
     line-height: 50px;   
     color: #005FA3;
     margin-left:  30px;
+    cursor: pointer;
 }
 
 .logo a img{
@@ -66,9 +69,9 @@
     font-size: 13px;
     line-height: 17px;
     color: #000000;
-    float: right;
-    
+    float: right;    
 }
+
 li:first-child{        
     list-style-image: url(../img/Vector.png);
 }

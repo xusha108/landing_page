@@ -1,16 +1,17 @@
 .about-wrapper {
-    width: 85%;
-    margin: 0 auto;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
 }
 
 .about_info{
-    width: 50%;
+    width: 35%;
 }
 
-.about-wrapper h5{
+.about_info h5{
     font-family: Lato;
     font-style: normal;
     font-weight: 900;
@@ -18,17 +19,82 @@
     line-height: 33px;
     color: #BDBDBD;
 }
-.about-wrapper p{
+.about_info p{
     font-family: Lato;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 25px;
     color: #000000;
+    margin: 40px 0;
 }
 
+.about_cards{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-content: center;
+    align-items: center;
+    
+}
+.about_cards:hover{
+    color:white;
+}
+
+.card{
+    width: 255px;
+    height: 255px;
+    background: #EBEBEB;
+    margin-top: 25px;
+}
+
+.card:hover{
+    cursor: pointer;
+    background: #005FA3;
+}
+.card:hover h1{
+    color:white;
+}
+.card:hover a{
+    color:white;
+}
+.card:hover p{
+    color:white;
+}
   
-.cards{
-
+.card h1{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 66px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
 }
 
+
+.card p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.card a{
+    cursor: pointer;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #005FA3;
+}
+.card h1, .card a, .card p{
+    margin-left: 50px;
+    text-align: left;
+}

@@ -4,7 +4,9 @@ import '../../styles/About.css'
 import IvanovImage from '../../img/IvanovComp.png'
 
 class About extends Component {
-    render() {     
+    render() {
+        const url='/';
+
        return (
 
         <div className="about-wrapper">
@@ -19,9 +21,31 @@ class About extends Component {
                     электронный дизайн.
                 </p>
             </div>
-            <div className='cards'>
+            <div className='about_cards'>
+                <div className='card'>
+                    <h1>90</h1>
+                    <p>Завершено крупных сделок</p>
+                    <a href={url}>Все кейсы</a>
+                </div>
+                <div className='card'>
+                    <h1>90</h1>
+                    <p>Завершено крупных сделок</p>
+                    <a href={url}>Все кейсы</a>
+                </div>
+                <div className='card'>
+                    <h1>90</h1>
+                    <p>Завершено крупных сделок</p>
+                    <a href={url}>Все кейсы</a>
+                </div>
+                <div className='card'>
+                    <h1>90</h1>
+                    <p>Завершено крупных сделок</p>
+                    <a href={url}>Все кейсы</a>
+                </div>
+            </div>   
 
-            </div>
+            
+
         </div>
 
          

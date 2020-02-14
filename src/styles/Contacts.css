@@ -1,0 +1,101 @@
+.contacts_wrapper{
+    background: url(../img/Rectangle_contacts.png);
+    padding: 4%;
+}
+.contacts_block{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5%;
+}
+.contacts_info h1{
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+    color: #FFFFFF;
+    padding: 30px 0;
+}
+
+.contacts_info p{
+    Width: 90%;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 50px 0;
+}
+
+.contacts_info li{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.contacts_info li:first-child{        
+    list-style-image: url(../img/cont_pone.png);
+}
+.contacts_info li:nth-child(2n){        
+    list-style-image: url(../img/cont_mail.png);
+}
+.contacts_mail{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_wrapper{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-top: 4%;
+}
+.form_wrapper input{
+   	font-size: 21px;
+    border: none;
+	background: none;
+    color:white;
+    padding: 10px;
+}
+.form_name, .form_surname{
+    display:inline;
+}
+
+.form_name input, .form_textarea input, .form_surname input{
+    border-bottom: 1px solid #FFFFFF;
+}
+
+
+.form_textarea input{
+    width: 540px;
+	resize: none;
+	height: 200px;
+    
+}
+
+.form_btn{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #005FA3;
+    border: none;
+    margin-top: 40px;
+    padding: 5px 15px;
+    
+}
+.form_btn:hover{
+    cursor: pointer;
+    opacity: 0.6;  
+}

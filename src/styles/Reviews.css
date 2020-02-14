@@ -1,0 +1,79 @@
+.reviews_wrapper{
+    height: 800px;
+}
+
+.reviews_wrapper h2{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+    color: #BDBDBD;
+    margin:100px 200px ;
+}
+
+.reviews_wrapper p{
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 69px;
+    color: #333333; 
+    margin:50px 200px;
+}
+.reviews_block{
+    margin: 0 auto;
+    width: 70%;
+    background: #EBEBEB;
+    padding: 50px;
+}
+
+.reviews_text p{
+    width: 88%;
+    text-align: left;
+    margin: 0 auto;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+.reviews_data_foto img{
+    display: inline;
+}
+.reviews_data{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 50px 0;
+}
+
+.reviews_data_info h3{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    margin: 0;
+}
+
+.reviews_data_info p{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #4F4F4F;
+    margin:0;
+}
+
+.dots{
+    background: url(../img/dot.png);
+}
+.dots:hover{
+    background: url(../img/dot_hover.png);
+    
+}
