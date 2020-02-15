@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { connect} from 'react-redux'
 
+import { contactSubmit } from '../../redux/actions/contact'
 import '../../styles/Contacts.css';
 import {every, values} from 'lodash';
 
-export default class Form extends Component {
+class Form extends Component {
    
     //   this.state = {name: '', surname: '', textarea: ''};
   
@@ -12,8 +14,6 @@ export default class Form extends Component {
     //   this.onChangeTextarea = this.onChangeTextarea.bind(this);
     //   this.onSubmit = this.onSubmit.bind(this);
     // }
-    
-   
     // onChangeName(event){
     //   this.setState({name: event.target.value});
     // }
@@ -37,10 +37,7 @@ export default class Form extends Component {
       },
       buttonEnabled: false,
     
-    };
-        
-     
-  
+    };        
     onChangeName = (event) => {
       const {value} = event.target;
       const nextFormValidation = this.validateName(value);
@@ -137,12 +134,12 @@ export default class Form extends Component {
       };
     };
 
-    // onSubmit(event){
-    //   this.onSubmit = this.onSubmit.bind(this);
-    //   alert(`${this.state.name}, ваше сообщение отправлено!`);
-    //   event.preventDefault();
-    // }
-
+    onSubmit = () => {
+      console.log('submit')
+      this.props.contactSubmit(
+        this.state.formData
+      );
+    }
 
     isValidForm = nextState => {
       const {formValidation, formData} = nextState;
@@ -152,9 +149,24 @@ export default class Form extends Component {
   
       return isValid && isRequiredFilled;
     };
+
+    showAlert = (text) => {
+      alert(text);
+    }
   
         render() {
           const {formData: {name, surname, textarea}, formValidation, buttonEnabled} = this.state;
+          const { contact } = this.props;
+
+          if (typeof contact.name !== 'undefined' && contact.name) {
+            let alert = `name: ${contact.name} \n\r`;
+
+            alert += `surname: ${contact.surname}\n\r`;
+            alert += `text: ${contact.textarea}`;
+
+           this.showAlert(alert);
+          }
+
           return (
             <div className='form_wrapper'>
               <div className='form_name'>
@@ -196,24 +208,20 @@ export default class Form extends Component {
               <button className='form_btn'
                 type='submit'
                 disabled={!buttonEnabled}
-                onChange={this.onSubmit}               
+                onClick={this.onSubmit}               
               >Отправить сообщение
               </button>
             </div>
           );
         }
 
-        // render() {
-      // return (
-        // <form onSubmit={this.onSubmit} className='form_wrapper'>
-        //   <label className='form_name'> Имя  <input type="text" name="Имя" placeholder='Иван' value={this.state.name}
-        //                    onChange={this.onChangeName}/></label>
-        //   <label className='form_surname'> Фамилия <input type="text" name="Фамилия" placeholder='Иванов' value={this.state.surname}
-        //                     onChange={this.onChangeSurname}/></label>
-        //   <p><label className='form_textarea'> Сообщение <input type="text" name="Сообщение" placeholder='Ваше сообщение' value={this.state.textarea}
-        //                     onChange={this.onChangeTextarea}/></label></p>
-        //   <button className='form_btn'><input type="submit" value="Отправить сообщение" /></button>
-        // </form>
-    //   );
-    // }
   }
+  const mapStateToProps = (state) => {
+    return {
+        contact: state.contact
+    };
+};
+
+export default connect(mapStateToProps, {
+  contactSubmit
+})(Form);

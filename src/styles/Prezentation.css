@@ -1,7 +1,7 @@
 .slider{
     widows: 100%;
-    height: 85%;
-    margin-top: 60px;
+    height: 55%;
+    margin-top: 3.8%;
     position:relative;
    
 }
@@ -9,10 +9,10 @@
     font-family: Merriweather;
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
-    line-height: 66px;
+    font-size: 3em;
+    line-height: 1.8em;
     color: #FFFFFF;
-    width: 73%;
+    width: 70%;
     height: 8%;
 }
 .slider_info{
@@ -26,12 +26,12 @@
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1.1em;
+    line-height: 1.6em;
     text-align: center;
     color: #FFFFFF;
     border:none;
-    padding: 10px 25px;
+    padding: 0.63em 1.6em;
 }
 .slider_info button:hover{
     cursor: pointer;
@@ -58,20 +58,26 @@
 .dot{
     position: absolute;
     width: 20%;
-    left: 15%;
-    top: 80%;
+    left: 18%;
+    top: 70%;
 }
 
 .dot img{
     margin-right: 10%;
-    width: 18px;
-    height: 18px;
-    padding: 5px;
+    width: 1.1em;
+    height: 1.1em;
+    padding: 0.31em;
 }
 .dot img:hover{
     opacity: 0.9;
     background:#FFFFFF;
     border-radius: 50%;
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
+.dot img.active{
+    opacity: 0.9;
+    background:#FFFFFF;
+    border-radius: 50%;   
+}
+
+

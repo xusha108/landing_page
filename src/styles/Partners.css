@@ -1,13 +1,14 @@
 .partners_wrapper{
     background: #EBEBEB;
-  
+    height: 70%;
+     
 }
 .partners_wrapper h2{
     font-family: Lato;
     font-style: normal;
     font-weight: 900;
-    font-size: 24px;
-    line-height: 33px;
+    font-size: 1.5em;
+    line-height: 2.1em;
     color: #BDBDBD;
 }
 
@@ -15,8 +16,8 @@
     font-family: Merriweather;
     font-style: normal;
     font-weight: 900;
-    font-size: 64px;
-    line-height: 69px;
+    font-size: 4em;
+    line-height: 4.3em;
     color: #333333; 
 }
 
@@ -24,35 +25,32 @@
     width: 80%;
     margin: 0 auto;
     text-align: left;
-    padding:8%;
+    padding: 8%;
 }
 
-.partners_block h2, p{
-    padding: 2%;
+.partners_block h2, .partners_block p{
     margin: 0;
 }
+
 
 .partners_logos{
     width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .partners_logos img{
     width: 255px;
     height: 130px;
-    padding: 4%;
-}
-/* .slider_dots {
-  
-    background-image: url('../img/dot.png'); 
+    padding: 3%;
 }
 
-.slider_dots:hover{
-    background-image: url('../img/dot_hover.png'); 
-} */
-
+.partners_logos img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
 .partners_btn{
     position:absolute;
     left: 80%;

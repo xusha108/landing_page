@@ -5,14 +5,16 @@ import LogoImgs from '../../img/partners_logos.png'
 import Slider from '../Presentations/Slider';
 
 export default class Partners extends Component {
-    render() {
-        const arrLogos = [
+    state ={
+        arrLogos : [
             LogoImgs,
             LogoImgs,
             LogoImgs,
             LogoImgs,
         ]
-        
+    }
+    render() {
+        const { arrLogos }=this.state;        
                
        return (
         <div className="partners_wrapper">
@@ -30,7 +32,7 @@ export default class Partners extends Component {
                 }               
             </div>
 
-            <Slider />
+            <Slider images={arrLogos}  />
 
         </div>       
          )

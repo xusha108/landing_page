@@ -6,16 +6,16 @@
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 5%;
+    
 }
 .contacts_info h1{
     font-family: Merriweather;
     font-style: normal;
     font-weight: 900;
-    font-size: 48px;
-    line-height: 69px;
+    font-size: 3em;
+    line-height: 4.3em;
     color: #FFFFFF;
-    padding: 30px 0;
+    padding: 1.9% 0;
 }
 
 .contacts_info p{
@@ -23,18 +23,18 @@
     font-family: Lato;
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1.1em;
+    line-height: 1.6em;
     color: #FFFFFF;
-    padding: 50px 0;
+    padding: 3.1% 0;
 }
 
 .contacts_info li{
     font-family: Lato;
     font-style: normal;
     font-weight: 300;
-    font-size: 21px;
-    line-height: 29px;
+    font-size: 1.3em;
+    line-height: 1.8em;
     color: #FFFFFF;
 }
 
@@ -53,17 +53,17 @@
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 1em;
+    line-height: 1.6em;
     color: #FFFFFF;
     margin-top: 4%;
 }
 .form_wrapper input{
-   	font-size: 21px;
+   	font-size: 1.3em;
     border: none;
 	background: none;
     color:white;
-    padding: 10px;
+    padding: 0.63em;
 }
 .form_name, .form_surname{
     display:inline;
@@ -75,27 +75,29 @@
 
 
 .form_textarea input{
-    width: 540px;
+    width: 34em;
 	resize: none;
-	height: 200px;
-    
+	height: 13em;
 }
 
 .form_btn{
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1.1em;
+    line-height: 1.6em;
     text-align: center;
     color: #FFFFFF;
     background: #005FA3;
     border: none;
-    margin-top: 40px;
-    padding: 5px 15px;
+    margin-top: 10%;
+    padding: 3% 9%;
     
 }
 .form_btn:hover{
     cursor: pointer;
-    opacity: 0.6;  
+    
+}
+.form_btn:disabled{
+    opacity: 0.6;
 }

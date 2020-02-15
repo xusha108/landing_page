@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './styles/App.css';
+import { Provider } from 'react-redux';
+import store from './redux/store';
 
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
@@ -16,7 +18,8 @@ import Contacts from './components/Contacts/Contacts'
 class App extends Component {
   render() {
      return (
-        <div>
+      <Provider store={store}>
+        <div className='app_wrapper'>
            <Header />
            <Presentations />
            <Specialize />
@@ -25,8 +28,8 @@ class App extends Component {
            <Reviews  />
            <Contacts />
            <Footer />
-           
-        </div>
+         </div>
+        </Provider>
      );
   }
 }
