@@ -35,18 +35,20 @@
       }
 
 .spec_item{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 300px;
-    height: 310px;
+    margin-top: 1.9em;
+    margin-bottom: 1.9em;
+    width: 19em;
+    height: 19em;
     background-image: url(../img/spesialised.png);
     padding: 0;
-           
+  
 }
 .spec_item a{
     color: white;
     text-decoration: none;
-}
+    font-size: 2.1em;
+    padding: 10px;
+ }
 
 .spec_item:hover{
     background-image: url(../img/spesialised_hover.png);

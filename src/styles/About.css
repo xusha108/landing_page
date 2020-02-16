@@ -31,7 +31,7 @@
 }
 
 .about_cards{
-    width: 40%;
+    width: 35%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; 
@@ -44,8 +44,8 @@
 }
 
 .card{
-    width: 255px;
-    height: 255px;
+    width: 16em;
+    height: 16em;
     background: #EBEBEB;
     margin-top: 16%;
 }
@@ -99,17 +99,3 @@
     text-align: left;
 }
 
-@media screen and (max-width: 991px) {
-    /* стили для больших планшетов - начало */
-
-}
-
-@media screen and (max-width: 767px) {
-/* стили для средних планшетов - начало */
-
-}
-
-@media screen and (max-width: 370px) {
-/* стили для телефонов - начало */
-
-}

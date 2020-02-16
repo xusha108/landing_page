@@ -1,8 +1,8 @@
 .partners_wrapper{
     background: #EBEBEB;
-    height: 70%;
-     
+       
 }
+
 .partners_wrapper h2{
     font-family: Lato;
     font-style: normal;
@@ -10,28 +10,24 @@
     font-size: 1.5em;
     line-height: 2.1em;
     color: #BDBDBD;
+    padding: 3%;
 }
 
-.partners_wrapper p{
+.partners_wrapper h1{
     font-family: Merriweather;
     font-style: normal;
     font-weight: 900;
     font-size: 4em;
     line-height: 4.3em;
     color: #333333; 
+    margin: 0;
 }
 
 .partners_block{
     width: 80%;
     margin: 0 auto;
     text-align: left;
-    padding: 8%;
 }
-
-.partners_block h2, .partners_block p{
-    margin: 0;
-}
-
 
 .partners_logos{
     width: 80%;
@@ -63,7 +59,70 @@
     opacity: 0.9;
     
 }
-.partners_btn img:hover{
-    cursor: pointer;
-    opacity: 0.6;  
+.partners_btn img.active{
+   opacity: 0.6;  
 }
+
+.slider2{
+    widows: 100%;
+    margin: 0 auto;
+    height: 25em;    
+    position:relative;
+   
+}
+
+.slider2_btn{
+    position:absolute;
+    left: 80%;
+    top: 70%;
+    width: 20%;
+}
+.slider2_btn img{
+    background: #FFFFFF;   
+    
+}
+.slider2_btn img:hover{
+    cursor: pointer;
+    opacity: 0.6;    
+}
+.arrLogos{
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.arrLogos img{
+    padding: 2em;
+    opacity: 0.5;
+    cursor: dRD;
+ }
+
+ .arrLogos img.active{
+    opacity: 1;
+     
+ }
+ 
+.dot{
+    position: absolute;
+    width: 20%;
+    left: 18%;
+    top: 70%;
+}
+
+.dot img{
+    margin-right: 10%;
+    width: 1.1em;
+    height: 1.1em;
+    padding: 0.31em;
+}
+.dot img:hover{
+    opacity: 0.9;
+    background:#FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;   
+}
+.dot img.active{
+    background: #445a83; 
+}     
+
+

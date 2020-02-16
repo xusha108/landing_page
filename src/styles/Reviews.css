@@ -9,7 +9,7 @@
     font-size: 1.5em;
     line-height: 2.1em;
     color: #BDBDBD;
-    margin: 5.3% 10% ;
+    margin: 2.3% 10% ;
 }
 
 .reviews_wrapper p{
@@ -27,7 +27,7 @@
     width: 70%;
     background: #EBEBEB;
     padding: 3.1%;
-    margin-bottom: 25%;
+    margin-bottom: 10%;
 }
 
 .reviews_text p{
@@ -75,10 +75,3 @@
     word-wrap: break-word;
 }
 
-.dots{
-    background: url(../img/dot.png);
-}
-.dots:hover{
-    background: url(../img/dot_hover.png);
-    
-}

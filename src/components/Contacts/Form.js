@@ -159,10 +159,11 @@ class Form extends Component {
           const { contact } = this.props;
 
           if (typeof contact.name !== 'undefined' && contact.name) {
-            let alert = `name: ${contact.name} \n\r`;
+            let alert = `Имя: ${contact.name} \n\r`;
 
-            alert += `surname: ${contact.surname}\n\r`;
-            alert += `text: ${contact.textarea}`;
+            alert += `Фамилия: ${contact.surname}\n\r`;
+            alert += `Ваше сообщение: ${contact.textarea}`;
+            
 
            this.showAlert(alert);
           }
